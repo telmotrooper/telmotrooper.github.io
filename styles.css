@@ -1,0 +1,13 @@
+body {
+	text-align: center;
+	background-color: #333;
+	color: white;
+}
+h1 {
+	margin-top: 50px;
+	margin-bottom: 40px;
+	font-family: 'Roboto', sans-serif;
+}
+p {
+	font-family: 'Open Sans', sans-serif;
+}
