@@ -3,7 +3,7 @@ $(document).ready(function() {
 	
 	var i = setInterval(function() {
 		if(timer == 0) {
-			window.location.replace("https://codepen.io/telmo_trooper/full/GEPMpy/");
+			window.location.href("https://codepen.io/telmo_trooper/full/GEPMpy/");
 			clearInterval(i);
 		}
 
