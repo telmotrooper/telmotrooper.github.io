@@ -15,6 +15,9 @@ p {
 h1, h2, h3, h4 {
   font-family: 'Roboto', sans-serif;
 }
+h4 {
+  display: inline-block;
+}
 .profile-pic {
   border-radius: 50%;
   width: 15%;
@@ -45,4 +48,11 @@ h1, h2, h3, h4 {
 }
 .project-description {
 	margin-top: 5px;
+}
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
+#show-hide {
+  margin-left: 5px;
 }
