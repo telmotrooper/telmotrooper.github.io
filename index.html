@@ -1,19 +1,110 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="UTF-8">
 	<title>Telmo "Trooper"</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- Dependencies -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://bootswatch.com/cyborg/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<!-- My own stuff -->
 	<link rel="stylesheet" href="styles.css">
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script src="script.js"></script>
+	<script src="scripts.js"></script>
 </head>
 
 <body>
-<div class="container-fluid">
-	<h1>Telmo "Trooper"</h1>
-	<p>You'll be redirected to <a href="https://codepen.io/telmo_trooper/full/GEPMpy/">Telmo's portfolio</a> on CodePen in <span id="counter">5</span> seconds.</p>
-</div>
+	<div class="container-fluid">
+		<div class="animated slideInDown">
+			<div id="phone-bio" class="short-bio-box visible-xs center-text">
+				<img class="img-responsive profile-pic-xs center-image" src="https://avatars0.githubusercontent.com/u/9438853">
+				<!-- the rest of the elements are copied with jQuery -->
+			</div>
+			<div class="short-bio-box hidden-xs">
+				<img class="img-responsive profile-pic" src="https://avatars0.githubusercontent.com/u/9438853">
+				<div class="bio-text">
+					<h1 id="name">Telmo "Trooper"</h1>
+					<h4 id="mail"><a href="mailto:telmo.trooper@gmail.com">telmo.trooper@gmail.com</a></h4>
+					<h5 id="occupation">Freelance Software Developer | Computer Science Undergraduate at <a href="http://ufsc.br/" target="_blank">UFSC</a></h5>
+					<h5 id="location">Based in <strong>Florianópolis, SC, Brazil</strong></h5>
+				</div>
+			</div>
+			<div class="row menu">
+				<div class="col-xs-4">
+					<a href="#about"><h4>About</h4></a>
+				</div>
+				<div class="col-xs-4">
+					<a href="#projects"><h4>Projects</h4></a>
+				</div>
+				<div class="col-xs-4">
+					<a href="#contact"><h4>Contact</h4></a>
+				</div>
+			</div>
+		</div>
+		<div class="content animated slideInUp">
+			<h3 id="about">About</h3>
+			<p>Hi! My name is <strong>Telmo Henrique Valverde da Silva</strong>, known in the web as <strong>Telmo "Trooper"</strong>. I'm a 21 years old video games and anime enthusiast, software developer and Computer Science undergraduate at the <a href="http://ufsc.br/" target="_blank">Federal University of Santa Catarina</a>. I live in the city of Florianópolis, located in the state of Santa Catarina, south of Brazil. I like to believe I'm fluent at American English (do correct me if you notice mistakes in my writing), but my mother language is Brazilian Portuguese.</p>
+			<h4>Certificates</h4>
+			<ul>
+				<li><a href="https://www.freecodecamp.org/telmotrooper/front-end-certification" target="_blank">Front End Development Certificate *FreeCodeCamp</a> (HTML5, CSS3, Bootstrap and jQuery)</li>
+			</ul>
+			<h3 id="projects">Projects</h3>
+			<h4>Webpages</h4>
+			<div class="row thumbnails">
+				<div class="col-xs-12 col-sm-4">
+					<a href="https://codepen.io/telmo_trooper/full/EXOdmN/" target="_blank"><img class="img-responsive" src="img/thumbnail_alan_turing.png"></a>
+					<p class="project-description">Alan Turing Tribute Page</p>
+				</div>
+				<div class="col-xs-12 col-sm-4">
+					<a href="https://codepen.io/telmo_trooper/full/VWoZGJ/" target="_blank"><img class="img-responsive" src="img/thumbnail_random_quotes.png"></a>
+					<p class="project-description">Random Quotes Generator</p>
+				</div>
+				<div class="col-xs-12 col-sm-4">
+					<a href="https://codepen.io/telmo_trooper/full/mwNvrv/" target="_blank"><img class="img-responsive" src="img/thumbnail_weather.png"></a>
+					<p class="project-description">Weather App</p>
+				</div>
+				<div class="col-xs-12 col-sm-4">
+					<a href="https://codepen.io/telmo_trooper/full/mMbBPz/" target="_blank"><img class="img-responsive" src="img/thumbnail_wikipedia.png"></a>
+					<p class="project-description">Wikipedia Viewer</p>
+				</div>
+				<div class="col-xs-12 col-sm-4">
+					<a href="https://codepen.io/telmo_trooper/full/YxKdaQ/" target="_blank"><img class="img-responsive" src="img/thumbnail_twitch.png"></a>
+					<p class="project-description">Twitch App</p>
+				</div>
+				<div class="col-xs-12 col-sm-4">
+					<a href="https://codepen.io/telmo_trooper/full/oebPJV/" target="_blank"><img class="img-responsive" src="img/thumbnail_calculator_js.png"></a>
+					<p class="project-description">Calculator (w/o operation precedence)</p>
+				</div>
+				<div class="col-xs-12 col-sm-4">
+					<a href="https://codepen.io/telmo_trooper/full/wqgWxJ/" target="_blank"><img class="img-responsive" src="img/thumbnail_pomodoro.png"></a>
+					<p class="project-description">Pomodoro Clock</p>
+				</div>
+				<div class="col-xs-12 col-sm-4">
+					<a href="https://codepen.io/telmo_trooper/full/rzzOgy/" target="_blank"><img class="img-responsive" src="img/thumbnail_tictactoe.png"></a>
+					<p class="project-description">Tic Tac Toe</p>
+				</div>
+				<div class="col-xs-12 col-sm-4">
+					<a href="https://codepen.io/telmo_trooper/full/ayLOGg/" target="_blank"><img class="img-responsive" src="img/thumbnail_simon.png"></a>
+					<p class="project-description">Simon Game</p>
+				</div>
+				
+			</div>
+			<h3 id="contact">Contact</h3>
+			<p>As you've probably seen above, my e-mail is <a href="mailto:telmo.trooper@gmail.com">telmo.trooper@gmail.com</a>. You can also find me on <a href="https://github.com/telmotrooper" target="_blank">GitHub</a>, where I usually host my university assignments and open source projects, and on <a href="https://www.linkedin.com/in/telmo-trooper/" target="_blank">LinkedIn</a>, though I'm still getting used to this one. I haven't been using Facebook in the late few months, since I feel I end up wasting too much of my time on it (my account is currently disabled). I also don't have a Twitter.</p>
+			<p>If you want to talk to me about hobbies in common, you can find me on:</p>
+			<a href="https://www.last.fm/user/telmo_w8" target="_blank"><button class="btn btn-default"><i class="fa fa-lastfm"></i> Last.fm</button></a>
+			<a href="https://myanimelist.net/profile/telmo_trooper" target="_blank"><button class="btn btn-default"><i class="fa fa-arrow-circle-o-right"></i> MyAnimeList</button></a>
+			<a href="http://steamcommunity.com/id/telmo_trooper" target="_blank"><button class="btn btn-default"><i class="fa fa-steam"></i> Steam</button></a>
+			<div class="footer-box">
+				<p>This site was created by <a href="https://github.com/telmotrooper/" target="_blank">Telmo "Trooper"</a> as an assignment for<br>
+				<a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a>'s Front End Development Course.</p>
+			</div>
+		</div>
+	</div>
 </body>
+
 </html>
