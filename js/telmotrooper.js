@@ -4,17 +4,16 @@ $(document).ready(function() {
 	$("#mail").clone().appendTo("#phone-bio");
 	$("#occupation").clone().appendTo("#phone-bio");
 	$("#location").clone().appendTo("#phone-bio");
-
-	$("#show-hide").click(function() {
-		if($("#webpages").is(":visible")) {
-			$("#show-hide-icon").removeClass("fa-chevron-down");
-			$("#show-hide-icon").addClass("fa-chevron-right");
-			$("#webpages").hide();
-		} else {
-			$("#show-hide-icon").removeClass("fa-chevron-right");
-			$("#show-hide-icon").addClass("fa-chevron-down");
-			$("#webpages").show();
-		}
-		
-	});
 });
+
+function showOrHide(element) {
+	if($("#" + element).is(":visible")) {
+		$("#" + element + "-btn").removeClass("fa-chevron-down");
+		$("#" + element + "-btn").addClass("fa-chevron-right");
+		$("#" + element).hide();
+	} else {
+		$("#" + element + "-btn").removeClass("fa-chevron-right");
+		$("#" + element + "-btn").addClass("fa-chevron-down");
+		$("#" + element).show();
+	}
+}

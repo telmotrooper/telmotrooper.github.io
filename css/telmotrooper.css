@@ -53,6 +53,6 @@ h4 {
   display: flex;
   align-items: center;
 }
-#show-hide {
+.show-hide-btn {
   margin-left: 5px;
 }

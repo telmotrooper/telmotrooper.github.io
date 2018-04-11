@@ -55,9 +55,9 @@
 			<h3 id="projects">Projects</h3>
 			<div class="vertical-align">
 				<h4>FreeCodeCamp</h4>
-				<button id="show-hide" class="btn btn-default btn-xs"><i id="show-hide-icon" class="fa fa-chevron-down"></i></button>
+				<a onclick="showOrHide('freecodecamp')"><button class="btn btn-default btn-xs show-hide-btn"><i id="freecodecamp-btn" class="fa fa-chevron-down"></i></button></a>
 			</div>
-			<div id="webpages" class="row thumbnails">
+			<div id="freecodecamp" class="row thumbnails">
 				<div class="col-xs-12 col-sm-4">
 					<a href="https://codepen.io/telmo_trooper/full/EXOdmN/" target="_blank"><img class="img-responsive" src="img/thumbnail_alan_turing.png"></a>
 					<p class="project-description">Alan Turing Tribute Page</p>
@@ -93,6 +93,18 @@
 				<div class="col-xs-12 col-sm-4">
 					<a href="https://codepen.io/telmo_trooper/full/ayLOGg/" target="_blank"><img class="img-responsive" src="img/thumbnail_simon.png"></a>
 					<p class="project-description">Simon Game</p>
+				</div>
+			</div>
+			<div class="vertical-align">
+				<h4>University assignments</h4>
+				<a onclick="showOrHide('university-assignments')">
+					<button class="btn btn-default btn-xs show-hide-btn"><i id="university-assignments-btn" class="fa fa-chevron-down"></i></button>
+				</a>
+			</div>
+			<div id="university-assignments" class="row thumbnails">
+				<div class="col-xs-12 col-sm-4">
+					<a href="https://telmotrooper.github.io/gomoku/" target="_blank"><img class="img-responsive" src="img/thumbnail_gomoku.png"></a>
+					<p class="project-description">Gomoku game with AI (collaboration w/ <a target="_blank" href="https://github.com/putschini">@putschini</a>)</p>
 				</div>
 			</div>
 			<h3 id="contact">Contact</h3>
